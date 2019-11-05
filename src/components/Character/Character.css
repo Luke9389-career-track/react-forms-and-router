@@ -1,0 +1,37 @@
+.Character {
+  background-color: black;
+  color: white;
+  width: 250px;
+  height: 350px;
+  display: inline-block;
+  margin:5px 10px;
+  border-bottom-left-radius: 16px;
+
+  #imgWrapper{
+    width: 100%;
+    height: 250px;
+    border: 2px dashed black;
+    overflow: hidden;
+
+    img { 
+      min-width: 250px;
+      min-height: 250px;
+      max-width: 200px;
+      max-height: 250px;
+      object-fit: cover;
+      object-position: 50% 30%;
+    }
+  }
+
+  #txtWrapper{
+    dt{
+      margin-left: 20px;
+    }
+    dd {
+      margin-right: 20px;
+      text-align: right;
+    }
+  }
+
+}
+

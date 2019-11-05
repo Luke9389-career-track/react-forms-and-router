@@ -1,5 +1,25 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from 'react-router-dom';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import CharacterList from '../containers/CharacterList';
+import Home from '../containers/Home';
+
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/list/:name" component={CharacterList} />
+        <Route path="/" render={()=> <h1>Not Found</h1>} />
+      </Switch>
+      <Footer />
+    </Router>
+  );
 }
