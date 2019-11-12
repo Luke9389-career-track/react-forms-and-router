@@ -4,7 +4,6 @@ import Card from '../Card/Card';
 import Deck from '../Deck/Deck';
 
 function DeckOfCards({ title, items }) {
-  console.log(items);
   return (
     <>
       <Deck title={title}>
@@ -13,7 +12,7 @@ function DeckOfCards({ title, items }) {
         ))}
       </Deck>
     </>
-  );
+  );  
 }
 
 DeckOfCards.propTypes = {
