@@ -1,0 +1,20 @@
+.Card{
+  background: white;  
+  border-radius: 10px;
+  padding: 15px 5px;
+  margin: 55px 5px;
+  box-shadow: black 10px 10px 10px;
+}
+
+.Card:hover{
+  box-shadow: rgb(79, 202, 244) 0px 0px 60px;
+  border: rgb(200, 241, 255) solid 5px;
+  animation: moveUp 2s infinite;
+}
+
+@keyframes moveUp {
+    0% {transform: translate3d(0px,0px,0px);}
+    50% {  transform: translate3d(0px,-15px,5px);} 
+    100% {transform: translate3d(0px,0px,0px);}
+
+}
